@@ -56,9 +56,9 @@ export function y() {
               Exam Papers
             </Link>
           </nav>
-          <Button variant="outline" className="hidden md:inline-flex">
-            Contact Us
-          </Button>
+            <Button variant="primary" className="hidden md:inline-flex">
+              Contact Us
+            </Button>
         </div>
       </header>
       <main className="flex-1">

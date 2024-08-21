@@ -3,6 +3,7 @@
 import { Manrope } from 'next/font/google'
 import { cn } from '@/lib/utils'
 import './globals.css'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const fontHeading = Manrope({
   subsets: ['latin'],

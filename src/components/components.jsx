@@ -36,7 +36,7 @@ export default function Component() {
               Exam Papers
             </Link>
           </nav>
-          <Button variant="outline" className="hidden md:inline-flex">
+          <Button herf="/contact-us"variant="outline" className="hidden md:inline-flex">
             Contact Us
           </Button>
         </div>
@@ -46,9 +46,6 @@ export default function Component() {
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center justify-between mb-8">
               <h2 className="text-2xl font-bold">Announcements</h2>
-              <Link href="#" className="text-primary hover:underline" prefetch={false}>
-                View All
-              </Link>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <Card>
@@ -60,7 +57,7 @@ export default function Component() {
                   </p>
                 </CardContent>
                 <CardFooter>
-                  <Link href="@/src/app/curriculum/primary.tsx" className="text-primary hover:underline" prefetch={false}>
+                  <Link href="#" className="text-primary hover:underline" prefetch={false}>
                     Learn More
                   </Link>
                 </CardFooter>
@@ -184,13 +181,54 @@ export default function Component() {
             </div>
           </div>
         </section>
+        <section id="notes" className="py-12">
+          <div className="container mx-auto px-6">
+            <div className="flex flex-col md:flex-row items-center justify-between mb-8">
+              <h2 className="text-2xl font-bold">Notes</h2>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              <Card>
+                <CardContent>
+                  <h3 className="text-xl font-bold mb-2">Class 12th</h3>
+                  <p className="text-muted-foreground">Class 12 All Subjects Notes Science Stream Only</p>
+                </CardContent>
+                <CardFooter>
+                <Link href="#" passHref>
+                  Learn More
+                </Link>
+
+                </CardFooter>
+              </Card>
+              <Card>
+                <CardContent>
+                  <h3 className="text-xl font-bold mb-2">Class 11th</h3>
+                  <p className="text-muted-foreground">Class 11th All Subject Notes Science Stream Only</p>
+                </CardContent>
+                <CardFooter>
+                  <Link href="#" className="text-primary hover:underline" prefetch={false}>
+                    Learn More
+                  </Link>
+                </CardFooter>
+              </Card>
+              <Card>
+                <CardContent>
+                  <h3 className="text-xl font-bold mb-2">Class 10th</h3>
+                  <p className="text-muted-foreground">Class 10th All Subject Notes</p>
+                </CardContent>
+                <CardFooter>
+                  <Link href="#" className="text-primary hover:underline" prefetch={false}>
+                    Learn More
+                  </Link>
+                </CardFooter>
+              </Card>
+            </div>
+          </div>
+        
+        </section>
         <section id="curriculum" className="py-12">
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center justify-between mb-8">
               <h2 className="text-2xl font-bold">Curriculum</h2>
-              <Link href="#" className="text-primary hover:underline" prefetch={false}>
-                View Details
-              </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               <Card>
@@ -199,9 +237,10 @@ export default function Component() {
                   <p className="text-muted-foreground">Comprehensive curriculum for grades 1-5.</p>
                 </CardContent>
                 <CardFooter>
-                  <Link href="kvpicket/src/app/curriculum/primary" className="text-primary hover:underline" prefetch={false}>
-                    Learn More
-                  </Link>
+                <Link href="/curriculum/primary" passHref>
+                  Learn More
+                </Link>
+
                 </CardFooter>
               </Card>
               <Card>
@@ -226,17 +265,14 @@ export default function Component() {
                   </Link>
                 </CardFooter>
               </Card>
-              
             </div>
           </div>
+          
         </section>
         <section id="sample-papers" className="bg-muted py-12">
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center justify-between mb-8">
               <h2 className="text-2xl font-bold">Sample Papers</h2>
-              <Link href="#" className="text-primary hover:underline" prefetch={false}>
-                View All
-              </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               <Card>
@@ -279,9 +315,6 @@ export default function Component() {
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center justify-between mb-8">
               <h2 className="text-2xl font-bold">Exam Papers</h2>
-              <Link href="#" className="text-primary hover:underline" prefetch={false}>
-                View All
-              </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
               <Card>
@@ -342,7 +375,7 @@ export default function Component() {
             <Link href="#" className="hover:underline" prefetch={false}>
               Terms of Service
             </Link>
-            <Link href="#" className="hover:underline" prefetch={false}>
+            <Link href="/contact-us" className="hover:underline" prefetch={false}>
               Contact Us
             </Link>
           </nav>

@@ -2,10 +2,9 @@ import { FC } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button'; // Adjust the import path according to your project
-import { SchoolIcon } from 'lucide-react';
- // Adjust the import path according to your project
+import { SchoolIcon } from 'lucide-react'; // Adjust the import path according to your project
  
- const TermsOfService: FC = () => {
+const TermsOfService: FC = () => {
   return (
     <>
       <Head>
@@ -96,7 +95,7 @@ import { SchoolIcon } from 'lucide-react';
           <h2 className="text-xl font-semibold mt-6">6. Disclaimers and Limitation of Liability</h2>
           <ul className="list-disc list-inside ml-4">
             <li>
-              The Website is provided on an "as-is" basis. The Creator makes no warranties or representations regarding
+              The Website is provided on an &quot;as-is&quot; basis. The Creator makes no warranties or representations regarding
               the accuracy, completeness, or reliability of the content.
             </li>
             <li>
@@ -113,8 +112,9 @@ import { SchoolIcon } from 'lucide-react';
 
           <h2 className="text-xl font-semibold mt-6">8. School-Hub Under White Hawk Studios</h2>
           <p>
-            This School Website Come Under White Hawk Studio. A Company Owned By Sri Ram Charan Student Of Kendriya Vidayalaya Picket.
+            This School Website Comes Under White Hawk Studio. A Company Owned By Sri Ram Charan Student Of Kendriya Vidyalaya Picket.
           </p>
+
           <h2 className="text-xl font-semibold mt-6">9. Contact Information</h2>
           <p>
             If you have any questions or concerns about these Terms of Service or any content on the Website, please

@@ -14,20 +14,14 @@ export default function Component() {
         <div className="container mx-auto flex items-center justify-between">
           <Link href="#" className="flex items-center gap-2" prefetch={false}>
             <SchoolIcon className="w-6 h-6" />
-            <span className="text-xl font-bold">Kendriya Vidyalaya Picket</span>
+            <span className="text-xl font-bold">School-Hub</span>
           </Link>
           <nav className="hidden md:flex items-center gap-4">
             <Link href="#" className="hover:underline" prefetch={false}>
-              Announcements
+              Code And Programs
             </Link>
-            <Link href="#" className="hover:underline" prefetch={false}>
-              Images
-            </Link>
-            <Link href="#" className="hover:underline" prefetch={false}>
-              Gallery
-            </Link>
-            <Link href="#curriculum" className="hover:underline" prefetch={false}>
-              Curriculum
+            <Link href="#notes" className="hover:underline" prefetch={false}>
+              Notes
             </Link>
             <Link href="#" className="hover:underline" prefetch={false}>
               Sample Papers
@@ -36,16 +30,18 @@ export default function Component() {
               Exam Papers
             </Link>
           </nav>
-          <Button herf="/contact-us"variant="outline" className="hidden md:inline-flex">
-            Contact Us
-          </Button>
+          <Link href="/contact-us/">
+      <Button variant="outline" className="hidden md:inline-flex">
+        Contact Us
+      </Button>
+    </Link>
         </div>
       </header>
       <main className="flex-1">
-        <section id="announcements" className="bg-muted py-12">
+        <section id="code" className="bg-muted py-12">
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center justify-between mb-8">
-              <h2 className="text-2xl font-bold">Announcements</h2>
+              <h2 className="text-2xl font-bold">Code And Programs</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <Card>
@@ -93,94 +89,6 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section id="images" className="py-12">
-          <div className="container mx-auto px-6">
-            <div className="flex flex-col md:flex-row items-center justify-between mb-8">
-              <h2 className="text-2xl font-bold">Images</h2>
-              <Link href="#" className="text-primary hover:underline" prefetch={false}>
-                View All
-              </Link>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              <img
-                src="/placeholder.svg"
-                width={300}
-                height={200}
-                alt="Image 1"
-                className="rounded-lg object-cover"
-                style={{ aspectRatio: "300/200", objectFit: "cover" }}
-              />
-              <img
-                src="/placeholder.svg"
-                width={300}
-                height={200}
-                alt="Image 2"
-                className="rounded-lg object-cover"
-                style={{ aspectRatio: "300/200", objectFit: "cover" }}
-              />
-              <img
-                src="/placeholder.svg"
-                width={300}
-                height={200}
-                alt="Image 3"
-                className="rounded-lg object-cover"
-                style={{ aspectRatio: "300/200", objectFit: "cover" }}
-              />
-              <img
-                src="/placeholder.svg"
-                width={300}
-                height={200}
-                alt="Image 4"
-                className="rounded-lg object-cover"
-                style={{ aspectRatio: "300/200", objectFit: "cover" }}
-              />
-            </div>
-          </div>
-        </section>
-        <section id="gallery" className="bg-muted py-12">
-          <div className="container mx-auto px-6">
-            <div className="flex flex-col md:flex-row items-center justify-between mb-8">
-              <h2 className="text-2xl font-bold">Gallery</h2>
-              <Link href="#" className="text-primary hover:underline" prefetch={false}>
-                View All
-              </Link>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              <img
-                src="/placeholder.svg"
-                width={300}
-                height={200}
-                alt="Gallery Image 1"
-                className="rounded-lg object-cover"
-                style={{ aspectRatio: "300/200", objectFit: "cover" }}
-              />
-              <img
-                src="/placeholder.svg"
-                width={300}
-                height={200}
-                alt="Gallery Image 2"
-                className="rounded-lg object-cover"
-                style={{ aspectRatio: "300/200", objectFit: "cover" }}
-              />
-              <img
-                src="/placeholder.svg"
-                width={300}
-                height={200}
-                alt="Gallery Image 3"
-                className="rounded-lg object-cover"
-                style={{ aspectRatio: "300/200", objectFit: "cover" }}
-              />
-              <img
-                src="/placeholder.svg"
-                width={300}
-                height={200}
-                alt="Gallery Image 4"
-                className="rounded-lg object-cover"
-                style={{ aspectRatio: "300/200", objectFit: "cover" }}
-              />
-            </div>
-          </div>
-        </section>
         <section id="notes" className="py-12">
           <div className="container mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center justify-between mb-8">
@@ -193,7 +101,7 @@ export default function Component() {
                   <p className="text-muted-foreground">Class 12 All Subjects Notes Science Stream Only</p>
                 </CardContent>
                 <CardFooter>
-                <Link href="#" passHref>
+                <Link href="/Notes/Class12th" passHref>
                   Learn More
                 </Link>
 
@@ -205,7 +113,7 @@ export default function Component() {
                   <p className="text-muted-foreground">Class 11th All Subject Notes Science Stream Only</p>
                 </CardContent>
                 <CardFooter>
-                  <Link href="#" className="text-primary hover:underline" prefetch={false}>
+                  <Link href="/Notes/Class11th" className="text-primary hover:underline" prefetch={false}>
                     Learn More
                   </Link>
                 </CardFooter>
@@ -216,7 +124,7 @@ export default function Component() {
                   <p className="text-muted-foreground">Class 10th All Subject Notes</p>
                 </CardContent>
                 <CardFooter>
-                  <Link href="#" className="text-primary hover:underline" prefetch={false}>
+                  <Link href="/Notes/Class10th" className="text-primary hover:underline" prefetch={false}>
                     Learn More
                   </Link>
                 </CardFooter>
@@ -224,50 +132,6 @@ export default function Component() {
             </div>
           </div>
         
-        </section>
-        <section id="curriculum" className="py-12">
-          <div className="container mx-auto px-6">
-            <div className="flex flex-col md:flex-row items-center justify-between mb-8">
-              <h2 className="text-2xl font-bold">Curriculum</h2>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              <Card>
-                <CardContent>
-                  <h3 className="text-xl font-bold mb-2">Primary</h3>
-                  <p className="text-muted-foreground">Comprehensive curriculum for grades 1-5.</p>
-                </CardContent>
-                <CardFooter>
-                <Link href="/curriculum/primary" passHref>
-                  Learn More
-                </Link>
-
-                </CardFooter>
-              </Card>
-              <Card>
-                <CardContent>
-                  <h3 className="text-xl font-bold mb-2">Secondary</h3>
-                  <p className="text-muted-foreground">Rigorous curriculum for grades 6-10.</p>
-                </CardContent>
-                <CardFooter>
-                  <Link href="#" className="text-primary hover:underline" prefetch={false}>
-                    Learn More
-                  </Link>
-                </CardFooter>
-              </Card>
-              <Card>
-                <CardContent>
-                  <h3 className="text-xl font-bold mb-2">Higher Secondary</h3>
-                  <p className="text-muted-foreground">Advanced curriculum for grades 11-12.</p>
-                </CardContent>
-                <CardFooter>
-                  <Link href="#" className="text-primary hover:underline" prefetch={false}>
-                    Learn More
-                  </Link>
-                </CardFooter>
-              </Card>
-            </div>
-          </div>
-          
         </section>
         <section id="sample-papers" className="bg-muted py-12">
           <div className="container mx-auto px-6">
@@ -290,17 +154,6 @@ export default function Component() {
                 <CardContent>
                   <h3 className="text-xl font-bold mb-2">Class 12 Sample Papers</h3>
                   <p className="text-muted-foreground">Download sample papers for Class 12 exams.</p>
-                </CardContent>
-                <CardFooter>
-                  <Link href="#" className="text-primary hover:underline" prefetch={false}>
-                    Download
-                  </Link>
-                </CardFooter>
-              </Card>
-              <Card>
-                <CardContent>
-                  <h3 className="text-xl font-bold mb-2">Board Exam Sample Papers</h3>
-                  <p className="text-muted-foreground">Download sample papers for board exams.</p>
                 </CardContent>
                 <CardFooter>
                   <Link href="#" className="text-primary hover:underline" prefetch={false}>
@@ -367,12 +220,12 @@ export default function Component() {
       </main>
       <footer className="bg-primary text-primary-foreground py-6 px-6">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
-          <p className="text-sm">&copy; 2024 School Name</p>
+          <p className="text-sm">&copy; 2024 White Hawk Studios</p>
           <nav className="flex items-center gap-4 mt-4 md:mt-0">
             <Link href="#" className="hover:underline" prefetch={false}>
               Privacy Policy
             </Link>
-            <Link href="#" className="hover:underline" prefetch={false}>
+            <Link href="/Temrs" className="hover:underline" prefetch={false}>
               Terms of Service
             </Link>
             <Link href="/contact-us" className="hover:underline" prefetch={false}>

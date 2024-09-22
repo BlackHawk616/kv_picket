@@ -54,7 +54,9 @@ export default function ComputerScienceNotes() {
               Contact Us
             </button>
           </Link>
-          <footer className="bg-primary text-primary-foreground py-6 px-6">
+        </div>
+      </header>
+      <footer className="bg-primary text-primary-foreground py-6 px-6">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
           <p className="text-sm">&copy; 2024 White Hawk Studios</p>
           <nav className="flex items-center gap-4 mt-4 md:mt-0">
@@ -69,9 +71,7 @@ export default function ComputerScienceNotes() {
             </Link>
           </nav>
         </div>
-      </footer>
-        </div>
-      </header>
+      </footer>         
 
       <main className="container mx-auto py-8">
         <h1 className="text-3xl font-bold mb-6">Class 12th - Computer Science Notes</h1>

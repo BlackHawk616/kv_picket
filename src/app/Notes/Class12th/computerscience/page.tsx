@@ -10,7 +10,12 @@ const chapters = [
   { name: "Ch-4.2: CSV File Handling", pdfLink: "/PDFS/4.2.pdf" },
   { name: "Ch-5 : Data Structures",  pdfLink: "/PDFS/5.pdf"},
   { name: "Ch-6 : Computer Networking",  pdfLink: "/PDFS/6.pdf"},
-
+  { name: "Ch-7 : Computer Networking 2",  pdfLink: "/PDFS/7.pdf"}, 
+  { name: "Ch-8 : RDBMS",  pdfLink: "/PDFS/8.pdf"},
+  { name: "Ch-9 : Structured Query Language (SQL)",  pdfLink: "/PDFS/9.pdf"},
+  { name: "Ch-10 : DDL And Constraints",  pdfLink: "/PDFS/10.pdf"},
+  { name: "Ch-11 : Joining SQL",  pdfLink : "/PDFS/11.pdf"},
+  { name: "Ch-12 : Interface Python With SQL",  pdfLink : "/PDFS/12.pdf"},
 ];
 
 export default function ComputerScienceNotes() {

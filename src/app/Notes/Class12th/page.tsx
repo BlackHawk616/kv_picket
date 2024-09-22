@@ -70,6 +70,22 @@ export default function Class12Notes() {
           ))}
         </div>
       </main>
+      <footer className="bg-primary text-primary-foreground py-6 px-6">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
+          <p className="text-sm">&copy; 2024 White Hawk Studios</p>
+          <nav className="flex items-center gap-4 mt-4 md:mt-0">
+            <Link href="#" className="hover:underline" prefetch={false}>
+              Privacy Policy
+            </Link>
+            <Link href="/Temrs" className="hover:underline" prefetch={false}>
+              Terms of Service
+            </Link>
+            <Link href="/contact-us" className="hover:underline" prefetch={false}>
+              Contact Us
+            </Link>
+          </nav>
+        </div>
+      </footer>
     </div>
   );
 }

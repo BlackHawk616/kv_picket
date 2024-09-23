@@ -3,7 +3,7 @@
 import { useParams } from 'next/navigation'; // Correct hook for Next.js App Router
 import Link from 'next/link';
 
-const testTypes = ['MonthlyTest', 'HalfYearly', 'FinalYear'];
+const testTypes = ['Monthly Test', 'HalfYearly', 'FinalYear'];
 
 export default function YearClass10Papers() {
   const params = useParams();  // Access dynamic parameters from the URL

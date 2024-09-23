@@ -3,19 +3,27 @@ import React from "react";
 import InteractiveChapterLink from "@/components/InteractiveChapterLink"; // Adjust the path if necessary
 
 const chapters = [
-  { name: "Ch2: Python Revision Tour - 2", pdfLink: "/PDFS/2.pdf" },
-  { name: "Ch-3: Functions", pdfLink: "/PDFS/3.pdf" },
-  { name: "Ch-4: Data File Handling", pdfLink: "/PDFS/4.pdf" },
-  { name: "Ch-4.1: Binary File Handling  ", pdfLink: "/PDFS/4.1.pdf" },
-  { name: "Ch-4.2: CSV File Handling", pdfLink: "/PDFS/4.2.pdf" },
-  { name: "Ch-5 : Data Structures",  pdfLink: "/PDFS/5.pdf"},
-  { name: "Ch-6 : Computer Networking",  pdfLink: "/PDFS/6.pdf"},
-  { name: "Ch-7 : Computer Networking 2",  pdfLink: "/PDFS/7.pdf"}, 
-  { name: "Ch-8 : RDBMS",  pdfLink: "/PDFS/8.pdf"},
-  { name: "Ch-9 : Structured Query Language (SQL)",  pdfLink: "/PDFS/9.pdf"},
-  { name: "Ch-10 : DDL And Constraints",  pdfLink: "/PDFS/10.pdf"},
-  { name: "Ch-11 : Joining SQL",  pdfLink : "/PDFS/11.pdf"},
-  { name: "Ch-12 : Interface Python With SQL",  pdfLink : "/PDFS/12.pdf"},
+  { name: "Ch-1 : Computer System Organization", pdfLink: "/PDFS/Class11th/cs/1.pdf" },
+  { name: "Ch-2 : Types Of Software", pdfLink: "/PDFS/Class11th/cs/2.pdf" },
+  { name: "Ch-3 : Boolean Algebra ", pdfLink: "/PDFS/Class11th/cs/3.pdf" },
+  { name: "Ch-4 : Number System", pdfLink: "/PDFS/Class11th/cs/4.pdf" },
+  { name: "Ch-5 : Cloud Computing and Services", pdfLink: "/PDFS/Class11th/cs/5.pdf" },
+  { name: "Ch-6 : Problem Solving",  pdfLink: "/PDFS/Class11th/cs/6.pdf"},
+  { name: "Ch-7 : Introduction To Python",  pdfLink: "/PDFS/Class11th/cs/7.pdf"},
+  { name: "Ch-8 : Python Fundamentals",  pdfLink: "/PDFS/Class11th/cs/8.pdf"}, 
+  { name: "Ch-9 : Data Handling",  pdfLink: "/PDFS/Class11th/cs/9.pdf"},
+  { name: "Ch-10 : Conditional Statements",  pdfLink: "/PDFS/Class11th/cs/10.pdf"},
+  { name: "Ch-11 : Working With Loops",  pdfLink: "/PDFS/Class11th/cs/11.pdf"},
+  { name: "Ch-12 : Strings",  pdfLink : "/PDFS/Class11th/cs/12.pdf"},
+  { name: "Ch-13 : List In Python",  pdfLink : "/PDFS/Class11th/cs/13.pdf"},
+  { name: "Ch-14 : Tuple In Python",   pdfLink :"/PDFS/Class11th/cs/14.pdf"}, 
+  { name: "Ch-15 : Dictionary In Python",  pdfLink : "/PDFS/Class11th/cs/15.pdf" },
+  { name: "Ch-16 : Sorting In Python", pdfLink: "/PDFS/Class11th/cs/16.pdf"},
+  { name: "Ch-17 : Python Modules", pdfLink:"/PDFS/Class11th/cs/17.pdf"},
+  { name: "Ch-18 : Cyber Security", pdfLink:"/PDFS/Class11th/cs/18.pdf"},
+  { name: "Ch-19 : Safely Accessing Website", pdfLink:"/PDFS/Class11th/cs/19.pdf"},
+  { name: "Ch-20 : IPR and Privacy Law", pdfLink:"/PDFS/Class11th/cs/20.pdf"},
+  { name: "Ch-21 : Technology And Society", pdfLink:"/PDFS/Class11th/cs/21.pdf"},
 ];
 
 export default function ComputerScienceNotes() {
@@ -55,9 +63,9 @@ export default function ComputerScienceNotes() {
             </button>
           </Link>
         </div>
-      </header>       
+      </header>         
       <main className="container mx-auto py-8">
-        <h1 className="text-3xl font-bold mb-6">Class 12th - Computer Science Notes</h1>
+        <h1 className="text-3xl font-bold mb-6">Class 11th - Computer Science Notes</h1>
         <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
           {chapters.map((chapter) => (
             <InteractiveChapterLink key={chapter.name} name={chapter.name} pdfLink={chapter.pdfLink} />
@@ -83,4 +91,3 @@ export default function ComputerScienceNotes() {
     </div>
   );
 }
-  

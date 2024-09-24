@@ -187,10 +187,10 @@ export default function Component() {
                   <p className="text-muted-foreground">Download previous year exam papers for Class 12.</p>
                 </CardContent>
                 <CardFooter>
-                  <Link href="#" className="text-primary hover:underline" prefetch={false}>
+                  <Link href="/papers/Class12th" className="text-primary hover:underline" prefetch={false}>
                     Download
                   </Link>
-                </CardFooter>
+                </CardFooter> 
               </Card>
               <Card>
                 <CardContent>

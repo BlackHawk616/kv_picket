@@ -1,13 +1,21 @@
+"use client";  // Mark this as a Client Component
+
+import { useParams } from 'next/navigation';  // Use useParams instead of useRouter
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { SchoolIcon } from 'lucide-react';
-import Link from 'next/link';
-import React from 'react';
-import styles from './Class10thPapers.module.css'; // Import the CSS module
 
-const years = [2025, 2024, 2023, 2022, 2021, 2020, 2019, 2018,
+// Define subjects
+const subjects = [
+  { name: "Maths", pdfLink: "/papers/Class10th/2024/MonthlyTest/Maths.pdf" },
+  { name: "Physics", pdfLink: "/papers/Class10th/2024/MonthlyTest/Physics.pdf" },
+  { name: "Chemistry", pdfLink: "/papers/Class10th/2024/MonthlyTest/Chemistry.pdf" },
+  // Add more subjects as needed
 ];
 
-export default function Class10thPapers() {
+export default function MonthlyTestPapers() {
+  const params = useParams();  // Get parameters from the URL
+
   return (
     <div className="flex flex-col min-h-screen"> {/* Flex container to ensure full height */}
       <header className="bg-primary text-primary-foreground py-4 px-6 shadow">
@@ -42,31 +50,19 @@ export default function Class10thPapers() {
         </div>
       </header>
 
-      {/* Custom buttons for each year */}
-      <div className="flex justify-center flex-wrap gap-4 mt-10 grow"> {/* Added grow for footer positioning */}
-        {years.map((year) => (
-          <Link href={`/papers/Class10th/${year}`} key={year} className="m-4">
-            <div className={`${styles.button} p-8 border rounded-lg shadow hover:bg-blue-100 cursor-pointer transition-all duration-300 ease-in-out`}>
-              <h2 className="text-xl text-center">Year {year}</h2>
-              {/* Star SVG elements */}
-              <div className={styles['star-1']}>
-                <svg viewBox="0 0 784.11 815.53" className={styles.fil0}>
-                  <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"></path>
-                </svg>
-              </div>
-              <div className={styles['star-2']}>
-                <svg viewBox="0 0 784.11 815.53" className={styles.fil0}>
-                  <path d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"></path>
-                </svg>
-              </div>
-              {/* Additional star components if needed */}
+    <div className="container mx-auto py-8">
+      <h1 className="text-3xl font-bold mb-8 text-center">Class 10th - Monthly Test Papers</h1>
+      <div className="flex justify-center flex-wrap gap-4">
+        {subjects.map((subject) => (
+          <Link href={subject.pdfLink} key={subject.name} target="_blank">
+            <div className="p-4 border rounded shadow hover:bg-blue-100 cursor-pointer">
+              <h2 className="text-xl text-center">{subject.name}</h2>
             </div>
           </Link>
         ))}
       </div>
-
-      {/* Footer */}
-      <footer className="bg-primary text-primary-foreground py-6 mt-auto"> {/* Added mt-auto to push footer to the bottom */}
+    </div>
+    <footer className="bg-primary text-primary-foreground py-6 mt-auto"> {/* Added mt-auto to push footer to the bottom */}
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
           <p className="text-sm">&copy; 2024 White Hawk Studios</p>
           <nav className="flex items-center gap-4 mt-4 md:mt-0">
@@ -84,4 +80,4 @@ export default function Class10thPapers() {
       </footer>
     </div>
   );
-}
+} 

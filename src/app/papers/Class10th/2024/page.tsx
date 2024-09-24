@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { SchoolIcon } from 'lucide-react';
 
-const testTypes = ['MonthlyTest', 'HalfYearly', 'FinalYear'];
+const testTypes = ['Monthly Test', 'HalfYearly', 'FinalYear'];
 
 export default function YearClass10Papers() {
   const params = useParams();  // Access dynamic parameters from the URL
